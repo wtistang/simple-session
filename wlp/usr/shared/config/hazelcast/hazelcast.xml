@@ -1,0 +1,12 @@
+<hazelcast xsi:schemaLocation="http://www.hazelcast.com/schema/config hazelcast-config-2.0.xsd"
+    xmlns="http://www.hazelcast.com/schema/config"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <network>
+    <join>
+      <multicast enabled="false"/>
+      <kubernetes enabled="true">
+        <service-name>hz-hazelcast</service-name>
+      </kubernetes>
+    </join>
+  </network>
+</hazelcast>
